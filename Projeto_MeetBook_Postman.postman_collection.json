@@ -1,0 +1,720 @@
+{
+	"info": {
+		"_postman_id": "f5701882-bfea-43a1-8396-d2a290ae2705",
+		"name": "Projeto_MeetBook_Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31402166"
+	},
+	"item": [
+		{
+			"name": "Autores",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/autores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/autores/20e950e1-8e65-4cbd-9ca9-c0697892a5bf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores",
+								"20e950e1-8e65-4cbd-9ca9-c0697892a5bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Ana Cláudia\",\r\n    \"dataNascimento\": \"1970-08-20\",\r\n    \"genero\": \"F\",\r\n    \"nacionalidade\": \"Inglês\",\r\n    \"linkInstagram\": \"https://www.instagram.com/rowling\",\r\n    \"biografia\": \"Joanne Jo Rowling OBE • FRSL (AFI: [dʒoʊæn_roʊlɪŋ]; Yate, 31 de julho de 1965), mais conhecida como J. K. Rowling, é uma escritora, roteirista e produtora cinematográfica britânica, notória por escrever a série de livros Harry Potter. Os livros ganharam uma popularidade mundial, recebendo múltiplos prêmios e vendendo mais de 600 milhões de cópias,[1] o que a tornou a série literária mais vendida da história.[\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/autores/2c90634a-94fc-47c1-ba67-27a227884b2f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores",
+								"2c90634a-94fc-47c1-ba67-27a227884b2f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastra",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"J.K Rowling\",\r\n    \"dataNascimento\": \"1970-08-20\",\r\n    \"genero\": \"F\",\r\n    \"nacionalidade\": \"Inglês\",\r\n    \"linkInstagram\": \"https://www.instagram.com/rowling\",\r\n    \"biografia\": \"Joanne Jo Rowling OBE • FRSL (AFI: [dʒoʊæn_roʊlɪŋ]; Yate, 31 de julho de 1965), mais conhecida como J. K. Rowling, é uma escritora, roteirista e produtora cinematográfica britânica, notória por escrever a série de livros Harry Potter. Os livros ganharam uma popularidade mundial, recebendo múltiplos prêmios e vendendo mais de 600 milhões de cópias,[1] o que a tornou a série literária mais vendida da história.[\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regra de Negocio: Autores 1 - Limite de caracter, BIO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"colleen hoover\",\r\n    \"dataNascimento\": \"2012-03-24\",\r\n    \"genero\": \"F\",\r\n    \"nacionalidade\": \"Inglês\",\r\n    \"linkInstagram\": \"https://www.instagram.com/rowling\",\r\n    \"biografia\": \"Em novembro de 2011, Hoover começou a escrever seu romance de estreia, Slammed , sem intenção de ser publicado. Ela foi inspirada por uma letra, decida o que ser e vá ser, de uma música dos Avett Brothers , Head Full of Doubt/Road Full of Promise, e ela incorporou as letras dos Avett Brothers ao longo da história. [13] Hoover publicou Slammed por conta própria em janeiro de 2012. [11] Ela afirma que publicou o romance para que sua mãe, que acabara de receber um Amazon Kindle , pudesse lê-lo. [14] Uma sequência, Point of Retreat , foi publicada em fevereiro de 2012. [11] Depois de alguns meses, Slammed foi revisado e recebeu cinco estrelas pela blogueira de livros Maryse Black, [15] e depois, as vendas dispararam rapidamente para os dois primeiros livros de Hoover. livros. [11] [16] Slammed e Point of Retreat alcançaram a 8ª e a 18ª posição, respectivamente, na lista dos mais vendidos do New York Times em agosto daquele ano. [17] [18] A Atria Books pegou os romances e os republicou em 10 de agosto de 2012. [19] Um terceiro livro da série, This Girl , foi publicado em abril de 2013. [20] [21] Após o sucesso de Batida , Hoover largou o emprego no serviço social para se tornar escritora em tempo integral. [14]O romance de Hoover, Hopeless, foi publicado pelo próprio em dezembro de 2012 e apresenta uma garota que estudou em casa durante todo o ensino fundamental antes de ir para uma escola pública. [11] O livro alcançou o primeiro lugar na lista dos mais vendidos do New York Times em 20 de janeiro de [2] [3] e permaneceu lá por três semanas. [22] Foi o primeiro romance publicado pelo próprio a chegar ao topo da lista. [23] Um romance complementar, Losing Hope , foi publicado naquele julho. [24]\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/autores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regra de Negocio: Autores 2 - Idade minima",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Isadora Comin NArt\",\r\n    \"dataNascimento\": \"2012-03-24\",\r\n    \"genero\": \"F\",\r\n    \"nacionalidade\": \"Inglês\",\r\n    \"linkInstagram\": \"https://www.instagram.com/rowling\",\r\n    \"biografia\": \"Teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/autores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regra de Negocio: Autores 3 - Nome obrigatoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"\",\r\n    \"dataNascimento\": \"2012-03-24\",\r\n    \"genero\": \"F\",\r\n    \"nacionalidade\": \"Inglês\",\r\n    \"linkInstagram\": \"https://www.instagram.com/rowling\",\r\n    \"biografia\": \"Teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/autores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Livros",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/livros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/livros/da0d7bfc-c871-49da-ae36-b135d313a9cd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"da0d7bfc-c871-49da-ae36-b135d313a9cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"A balada do felizes para o nunca\",\r\n    \"subtitulo\": \"\",\r\n    \"numeroPaginas\": 280,\r\n    \"isbn\": \"8525067423\",\r\n    \"editora\": \"Alt\",\r\n    \"anoLancamento\": 2019,\r\n    \"logoUrl\": \"https://www.example.com/logo.png\",\r\n    \"preco\": 29,\r\n    \"autor\": {\r\n        \"nome\": \"Cole Sprouse\",\r\n        \"dataNascimento\": \"1990-01-01\",\r\n        \"genero\": \"F\",\r\n        \"nacionalidade\": \"Americano\",\r\n        \"linkInstagram\": \"https://www.instagram.com/colesprouse\",\r\n        \"biografia\": \"Cole Mitchell Sprouse (Arezzo, 4 de agosto de 1992)[2] é um ator, produtor, arqueólogo e fotógrafo americano. Ele é o irmão gêmeo de Dylan Sprouse e é conhecido por seu papel como Cody Martin na série Disney Channel, The Suite Life of Zack & Cody e seu derivado The Suite Life on Deck. Em 2017, Sprouse começou a protagonizar a série de televisão Riverdale interpretando o personagem Jughead Jones. Sua atuação na série rendeu-lhe indicação ao Prêmio Saturno de Melhor Performance de um Jovem Ator em uma Série Televisiva nas edições de 2018 e 2019 da premiação.\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros/39760a25-d4f6-40e1-a94c-e63ec94e3836",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"39760a25-d4f6-40e1-a94c-e63ec94e3836"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastra",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"O poder do habito \",\r\n    \"subtitulo\": \"\",\r\n    \"numeroPaginas\": 280,\r\n    \"isbn\": \"8525067423\",\r\n    \"editora\": \"Alt\",\r\n    \"anoLancamento\": 2019,\r\n    \"logoUrl\": \"https://www.example.com/logo.png\",\r\n    \"preco\": 29,\r\n    \"autor\": {\r\n        \"nome\": \"Cole Sprouse\",\r\n        \"dataNascimento\": \"1990-01-01\",\r\n        \"genero\": \"F\",\r\n        \"nacionalidade\": \"Americano\",\r\n        \"linkInstagram\": \"https://www.instagram.com/colesprouse\",\r\n        \"biografia\": \"Teste\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regra de Negocio: Livros 1 - ISBN obrigatorio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"A cinco passos de voce\",\r\n    \"subtitulo\": \"\",\r\n    \"numeroPaginas\": 280,\r\n    \"isbn\": \"\",\r\n    \"editora\": \"Alt\",\r\n    \"anoLancamento\": 2019,\r\n    \"logoUrl\": \"https://www.example.com/logo.png\",\r\n    \"preco\": 29,\r\n    \"autor\": {\r\n        \"nome\": \"Cole Sprouse\",\r\n        \"dataNascimento\": \"1990-01-01\",\r\n        \"genero\": \"F\",\r\n        \"nacionalidade\": \"Americano\",\r\n        \"linkInstagram\": \"https://www.instagram.com/colesprouse\",\r\n        \"biografia\": \"Cole Mitchell Sprouse (Arezzo, 4 de agosto de 1992)[2] é um ator, produtor, arqueólogo e fotógrafo americano. Ele é o irmão gêmeo de Dylan Sprouse e é conhecido por seu papel como Cody Martin na série Disney Channel, The Suite Life of Zack & Cody e seu derivado The Suite Life on Deck. Em 2017, Sprouse começou a protagonizar a série de televisão Riverdale interpretando o personagem Jughead Jones. Sua atuação na série rendeu-lhe indicação ao Prêmio Saturno de Melhor Performance de um Jovem Ator em uma Série Televisiva nas edições de 2018 e 2019 da premiação.\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regra de Negocio: Livros 2 - Numero de paginas positivos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"A cinco passos de voce\",\r\n    \"subtitulo\": \"\",\r\n    \"numeroPaginas\": -1897,\r\n    \"isbn\": \"8525067423\",\r\n    \"editora\": \"Alt\",\r\n    \"anoLancamento\": 2019,\r\n    \"logoUrl\": \"https://www.example.com/logo.png\",\r\n    \"preco\": 29,\r\n    \"autor\": {\r\n        \"nome\": \"Cole Sprouse\",\r\n        \"dataNascimento\": \"1990-01-01\",\r\n        \"genero\": \"F\",\r\n        \"nacionalidade\": \"Americano\",\r\n        \"linkInstagram\": \"https://www.instagram.com/colesprouse\",\r\n        \"biografia\": \"Cole Mitchell Sprouse (Arezzo, 4 de agosto de 1992)[2] é um ator, produtor, arqueólogo e fotógrafo americano. Ele é o irmão gêmeo de Dylan Sprouse e é conhecido por seu papel como Cody Martin na série Disney Channel, The Suite Life of Zack & Cody e seu derivado The Suite Life on Deck. Em 2017, Sprouse começou a protagonizar a série de televisão Riverdale interpretando o personagem Jughead Jones. Sua atuação na série rendeu-lhe indicação ao Prêmio Saturno de Melhor Performance de um Jovem Ator em uma Série Televisiva nas edições de 2018 e 2019 da premiação.\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regra de Negocio: Livros 3 - Ano deve ser numero inteiro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"A cinco passos de voce\",\r\n    \"subtitulo\": \"\",\r\n    \"numeroPaginas\": 280,\r\n    \"isbn\": \"8525067423\",\r\n    \"editora\": \"Alt\",\r\n    \"anoLancamento\": 2.19,\r\n    \"logoUrl\": \"https://www.example.com/logo.png\",\r\n    \"preco\": 29,\r\n    \"autor\": {\r\n        \"nome\": \"Cole Sprouse\",\r\n        \"dataNascimento\": \"1990-01-01\",\r\n        \"genero\": \"F\",\r\n        \"nacionalidade\": \"Americano\",\r\n        \"linkInstagram\": \"https://www.instagram.com/colesprouse\",\r\n        \"biografia\": \"Cole Mitchell Sprouse (Arezzo, 4 de agosto de 1992)[2] é um ator, produtor, arqueólogo e fotógrafo americano. Ele é o irmão gêmeo de Dylan Sprouse e é conhecido por seu papel como Cody Martin na série Disney Channel, The Suite Life of Zack & Cody e seu derivado The Suite Life on Deck. Em 2017, Sprouse começou a protagonizar a série de televisão Riverdale interpretando o personagem Jughead Jones. Sua atuação na série rendeu-lhe indicação ao Prêmio Saturno de Melhor Performance de um Jovem Ator em uma Série Televisiva nas edições de 2018 e 2019 da premiação.\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regra de Negocio: Livros 4-  Livro máx.100 caracter titulo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Cole Mitchell Sprouse (Arezzo, 4 de agosto de 1992)[2] é um ator, produtor, arqueólogo e fotógrafo americano. Ele é o irmão gêmeo de Dylan Sprouse e é conhecido por seu papel como Cody Martin na série Disney Channel, The Suite Life of Zack & Cody e seu derivado The Suite Life on Deck. Em 2017, Sprouse começou a protagonizar a série de televisão Riverdale interpretando o personagem Jughead Jones. Sua atuação na série rendeu-lhe indicação ao Prêmio Saturno de Melhor Performance de um Jovem Ator em uma Série Televisiva nas edições de 2018 e 2019 da premiação.\",\r\n    \"subtitulo\": \"\",\r\n    \"numeroPaginas\": 280,\r\n    \"isbn\": \"1254624862\",\r\n    \"editora\": \"Alt\",\r\n    \"anoLancamento\": 2019,\r\n    \"logoUrl\": \"https://www.example.com/logo.png\",\r\n    \"preco\": 29,\r\n    \"autor\": {\r\n        \"nome\": \"Cole Sprouse\",\r\n        \"dataNascimento\": \"1990-01-01\",\r\n        \"genero\": \"F\",\r\n        \"nacionalidade\": \"Americano\",\r\n        \"linkInstagram\": \"https://www.instagram.com/colesprouse\",\r\n        \"biografia\": \"Cole Mitchell Sprouse (Arezzo, 4 de agosto de 1992)[2] é um ator, produtor, arqueólogo e fotógrafo americano. Ele é o irmão gêmeo de Dylan Sprouse e é conhecido por seu papel como Cody Martin na série Disney Channel, The Suite Life of Zack & Cody e seu derivado The Suite Life on Deck. Em 2017, Sprouse começou a protagonizar a série de televisão Riverdale interpretando o personagem Jughead Jones. Sua atuação na série rendeu-lhe indicação ao Prêmio Saturno de Melhor Performance de um Jovem Ator em uma Série Televisiva nas edições de 2018 e 2019 da premiação.\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regra de Negocio: Livros 4 - Nome deve ter no máximo 100",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Em novembro de 2011, Hoover começou a escrever seu romance de estreia, Slammed , sem intenção de ser publicado. Ela foi inspirada por uma letra, decida o que ser e vá ser, de uma música dos Avett Brothers , Head Full of Doubt/Road Full of Promise, e ela incorporou as letras dos Avett Brothers ao longo da história. [13] Hoover publicou Slammed por conta própria em janeiro de 2012. [11] Ela afirma que publicou o romance para que sua mãe, que acabara de receber um Amazon Kindle , pudesse lê-lo. [14] Uma sequência, Point of Retreat , foi publicada em fevereiro bt/Road Full of Promise, e ela \",\r\n    \"dataNascimento\": \"2012-03-24\",\r\n    \"genero\": \"F\",\r\n    \"nacionalidade\": \"Inglês\",\r\n    \"linkInstagram\": \"https://www.instagram.com/rowling\",\r\n    \"biografia\": \"Em novembro de 2011, Hoover começou a escrever seu romance de estreia, Slammed , sem intenção de ser publicado. Ela foi inspirada por uma letra, decida o que ser e vá ser, de uma música dos Avett Brothers , Head Full of Doubt/Road Full of Promise, e ela incorporou as letras dos Avett Brothers ao longo da história. [13] Hoover publicou Slammed por conta própria em janeiro de 2012.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/autores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/usuarios/2b6bc866-1a72-4e7b-a897-6156d707026a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"2b6bc866-1a72-4e7b-a897-6156d707026a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Leandro\",\r\n    \"email\": \"leandro@hotmail.com\",\r\n    \"dataNascimento\": \"1997-09-03\",\r\n    \"genero\": \"M\",\r\n    \"pais\": \"Rússia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/usuarios/a080dc5c-77ab-4501-987f-33e89ea6c195",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"a080dc5c-77ab-4501-987f-33e89ea6c195"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastra",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Anderson\",\r\n    \"email\": \"anderson@hotmail.com\",\r\n    \"dataNascimento\": \"1997-09-03\",\r\n    \"genero\": \"M\",\r\n    \"pais\": \"Rússia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regra de Negocio: Usuarios 1 - Caracter nome > 100",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Anderson Furlan Mello da Silva Comin Nart Miranda Decali Testeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\",\r\n    \"email\": \"anderson@hotmail.com\",\r\n    \"dataNascimento\": \"1997-09-03\",\r\n    \"genero\": \"M\",\r\n    \"pais\": \"Rússia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regra de Negocio: Usuarios 2 - Caracter email > 50",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Anderson\",\r\n    \"email\": \"anderson@hotmail.commmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\",\r\n    \"dataNascimento\": \"1997-09-03\",\r\n    \"genero\": \"M\",\r\n    \"pais\": \"Rússia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regra de Negocio: Usuarios 3 - Idade minima 18",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Anderson\",\r\n    \"email\": \"anderson@hotmail.com\",\r\n    \"dataNascimento\": \"2024-09-03\",\r\n    \"genero\": \"M\",\r\n    \"pais\": \"Rússia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Diferencial - Busca Avancada",
+			"item": [
+				{
+					"name": "Busca_Avancada-Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/usuarios/search?q=Eduarda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Eduarda"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca_Avancada-Autores",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/autores/search?q=Sabrina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Sabrina"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca_Avancada-Livros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/livros/search?q=Crepusculo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Crepusculo"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
